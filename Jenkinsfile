@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm cache clean -f'
-                sh 'npm install'
+                sh 'npm install -g npm@latest'
             }
         }
         stage('Test') {
